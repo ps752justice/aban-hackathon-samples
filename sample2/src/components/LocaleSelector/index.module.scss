@@ -1,0 +1,10 @@
+.lang {
+  padding: 10px;
+  background-color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &.selected {
+    background-color: #333;
+  }
+}

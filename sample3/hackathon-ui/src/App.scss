@@ -1,0 +1,35 @@
+@use "./theme/css-theme" as theme;
+
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: IRANSansMobile-fa;
+    font-style: normal;
+    font-weight: bold;
+    src: url(./assets/fonts/fa-Iran-sans-web-bold.woff2);
+    font-display: fallback;
+}
+@font-face {
+    font-family: IRANSansMobile-fa;
+    font-style: normal;
+    font-weight: 300;
+    src: url(./assets/fonts/fa-Iran-sans-web-light.woff2);
+    font-display: fallback;
+}
+@font-face {
+    font-family: Nunito;
+    src: local("Nunito"),
+        url(./assets/fonts/Nunito-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: NunitoItalic;
+    src: local("NunitoItalic"),
+        url(./assets/fonts/Nunito-Italic-VariableFont_wght.ttf)
+            format("truetype");
+}
+
+body {
+    font-family: Nunito, serif;
+    background-color: #111D24;
+    user-select: none;
+}

@@ -1,0 +1,10 @@
+{
+  "victims": "Victims",
+  "victims_description": "A series of nationwide civil protests in Iran, sometimes known as Bloody November or (using the Iranian calendar) Bloody Aban (Persian: آبان خونین) took place in 2019 and 2020. Initially caused by a 50–200% increase in fuel prices, they occurred as part of the wider Iranian Democracy Movement, leading to calls for the overthrow of the government in Iran and Supreme Leader Ali Khamenei. The protests commenced as peaceful gatherings on the evening of 15 November but spread to 21 cities within hours, as videos of the protest circulated online, eventually becoming the most violent and severe anti-government unrest since the rise of Iran's Islamic Republic in 1979.",
+  "filter": {
+    "choose": "Choose...",
+    "name": "Name",
+    "age": "Age",
+    "location": "Location"
+  }
+}

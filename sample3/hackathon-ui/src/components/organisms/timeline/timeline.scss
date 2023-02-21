@@ -1,0 +1,70 @@
+@use "../../../theme/css-theme" as theme;
+
+.timeline {
+    margin-left: -12px;
+    margin-right: 10%;
+    margin-top: 38px;
+    margin-bottom: 24px;
+    border-top: 3px dotted theme.$primary;
+    position: relative;
+    color: theme.$primary;
+}
+
+.rtl .timeline {
+    margin-right: -12px !important;
+    margin-left: 10% !important;
+}
+
+.event {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.rtl .event {
+    text-align: left;
+}
+
+.event-point {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    background-color: theme.$primary;
+}
+
+.event-point:hover,
+.selected .event-point {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: theme.$accentPrimary;
+    border: 2px solid theme.$primary;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.event-title {
+    font-size: 12px;
+}
+
+.selected .event-title {
+    color: theme.$accentPrimary;
+    font-weight: bold;
+}
+
+.freedom {
+    position: absolute;
+    right: -30px;
+    top: -25px;
+}
+
+.rtl .freedom {
+    left: -30px;
+    right: auto;
+    img {
+        transform: scaleX(-1);
+    }
+}

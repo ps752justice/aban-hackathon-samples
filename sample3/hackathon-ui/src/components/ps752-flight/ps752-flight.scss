@@ -1,0 +1,15 @@
+@use "../../theme/css-theme.scss" as theme;
+
+.img-container {
+    width: 80%;
+    margin: 10px auto;
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container {
+        width: 100%;
+    }
+}

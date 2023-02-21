@@ -1,0 +1,12 @@
+[
+  {
+    "key": "en-CA",
+    "text": "English",
+    "dir": "ltr"
+  },
+  {
+    "key": "fa-IR",
+    "text": "فارسی",
+    "dir": "rtl"
+  }
+]

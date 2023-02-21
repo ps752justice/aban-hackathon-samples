@@ -1,0 +1,22 @@
+{
+  "main_nav": {
+    "bloody_november": "آبان خونین",
+    "home": "خانه",
+    "victims": "قربانیان"
+  },
+  "bloody_november": "آبان خونین",
+  "unidentified": "هویت شناسایی نشده",
+  "unspecified": "نامشخص",
+  "between": "بین",
+  "to": "تا",
+  "or": "یا",
+  "less_than": "کوچکتر از",
+  "more_than": "بزرگتر از",
+  "probably_less_than": "احتمالا کوچکتر از",
+  "probably_more_than": "احتمالا بزرگتر از",
+  "probably": "احتمالا",
+  "year": "سال",
+  "footer": {
+    "copyright": "@ 2020 تمام حقوق این وب‌سایت، بر اساس مقررات کپی‌رایت، برای انجمن خانواده‌های جانباختگان پرواز PS752 محفوظ است."
+  }
+}

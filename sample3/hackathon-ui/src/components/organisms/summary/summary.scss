@@ -1,0 +1,44 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+.summary-title {
+    width: 80%;
+    margin: 0px auto;
+    font-size: 34px;
+    color: theme.$accentPrimary;
+    line-height: 72px;
+}
+.summary-icon {
+    width: 80%;
+    margin: 0px auto;
+}
+.summary-description {
+    width: 80%;
+    color: theme.$primary;
+    margin-bottom: 21px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.rtl {
+    .summary-container {
+        direction: rtl;
+    }
+    .summary-icon {
+        margin: 0px auto;
+    }
+    .summary-title {
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .summary-description {
+        width: 100%;
+    }
+    .summary-icon {
+        width: 100%;
+    }
+}

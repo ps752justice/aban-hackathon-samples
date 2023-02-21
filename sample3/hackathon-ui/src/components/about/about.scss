@@ -1,0 +1,6 @@
+@use "../../theme/css-theme.scss" as theme;
+
+.about-container {
+    color: theme.$primary;
+    padding: 20px 0px;
+}

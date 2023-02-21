@@ -1,0 +1,26 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+.card-container {
+    background-color: theme.$primary;
+    margin: 16px 0px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: black;
+}
+
+.card-img {
+    width: 91px;
+    height: 99px;
+    margin: 0px auto;
+    background-color: #7aaeed;
+    border-radius: 10px;
+}
+
+.card-label {
+    font-size: 12px;
+}
+
+.card-value {
+    font-weight: bold;
+    font-size: 12px;
+}

@@ -1,0 +1,26 @@
+.language-picker-container {
+    .selected-language-toggle {
+        background-color: transparent !important;
+        border: 0px;
+        img {
+            margin-right: 0.255em;
+        }
+    }
+}
+
+.rtl {
+    .language-picker-container {
+        .selected-language-toggle::after {
+            margin-left: 0em;
+            margin-right: 0.255em;
+        }
+        .selected-language-toggle {
+            background-color: transparent !important;
+            border: 0px;
+            img {
+                margin-left: 0.255em;
+                margin-right: 0px;
+            }
+        }
+    }
+}

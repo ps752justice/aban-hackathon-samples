@@ -1,0 +1,23 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+.spinner-overlay {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    right: -12px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    z-index: 1020;
+    .spinner-box {
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        background-color: theme.$primary;
+        border-radius: 30px;
+    }
+}

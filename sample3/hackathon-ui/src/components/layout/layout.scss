@@ -1,0 +1,47 @@
+@use "../../theme/css-theme.scss" as theme;
+
+.rtl, .modal-rtl {
+    font-family: IRANSansMobile-fa, Nunito, serif;
+}
+
+.ltr {
+    font-family: Nunito, serif;
+}
+
+.transparent-navbar {
+    background-color: transparent !important;
+    padding: 6px 12px;
+
+    .nav-link {
+        color: theme.$primary;
+    }
+    .nav-link:hover {
+        color: grey;
+    }
+
+    .nav-link:first-of-type {
+        padding-left: 0px !important;
+    }
+}
+
+.rtl .nav-link:first-of-type {
+    padding-left: 8px !important;
+    padding-right: 0px !important;
+}
+
+.selected-nav {
+    color: theme.$accentPrimary !important;
+}
+
+.freeze-nav {
+    position: fixed;
+}
+
+.top-card {
+    background-color: theme.$backgroundPrimary;
+    box-shadow: 0px 1px 0px rgba(23, 43, 54, 0.85);
+}
+
+.content {
+    margin-top: 14px;
+}

@@ -1,0 +1,8 @@
+@use "../../../theme/css-theme" as theme;
+
+.footer {
+    margin: 12px auto;
+    color: grey;
+    text-align: center;
+    direction: ltr !important;
+}

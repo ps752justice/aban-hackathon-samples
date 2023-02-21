@@ -1,0 +1,64 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+.search-container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.input-group {
+    width: 50%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: theme.$primary !important;
+}
+
+.input-group-text {
+    border-right: 0px;
+}
+
+.search-input {
+    border-left: 0px;
+    color: theme.$primary !important;
+}
+.search-input::placeholder {
+    color: theme.$primary !important;
+}
+
+.rtl {
+    .input-group-text {
+        border-left: 0px;
+        border-right: 1px solid theme.$primary;
+        border-top-right-radius: 0.375rem !important;
+        border-bottom-right-radius: 0.375rem !important;
+        border-top-left-radius: 0rem !important;
+        border-bottom-left-radius: 0rem !important;
+    }
+
+    .search-input {
+        border-right: 0px;
+        border-top-left-radius: 0.375rem !important;
+        border-bottom-left-radius: 0.375rem !important;
+        border-top-right-radius: 0rem !important;
+        border-bottom-right-radius: 0rem !important;
+        border-left: 1px solid theme.$primary;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        width: 100%;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rtl {
+        .input-group {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

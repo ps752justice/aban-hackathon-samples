@@ -1,0 +1,104 @@
+@use "../../theme/css-theme.scss" as theme;
+
+.container {
+    width: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.show_title {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 0.78em;
+    line-height: 26px;
+    border-radius: 2px;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.map {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.map .svg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 2.5s ease;
+    overflow: auto;
+}
+
+.map .border path {
+    fill: #fff;
+}
+
+.province {
+    fill: theme.$primary;
+}
+
+.map .sea path,
+.map .lake path {
+    fill: #b6d9ff;
+}
+
+.map .province path:hover {
+    fill: theme.$accentPrimary;
+}
+
+.selected {
+    fill: theme.$accentPrimary;
+}
+
+.victims-count-circle {
+    fill: theme.$accentPrimary;
+    stroke: theme.$primary;
+    filter: drop-shadow(0px 0px 6px rgba(240, 127, 115, 2));
+}
+.victims-count-text {
+    stroke: theme.$primary;
+    stroke-width: "1px";
+}
+
+.victims-count-text:hover,
+.victims-count-circle:hover,
+.map .province path:hover {
+    cursor: pointer;
+}
+
+.map .province path:focus {
+    fill: #1bb97c;
+    outline: 0;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.9);
+    z-index: 99999;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+}

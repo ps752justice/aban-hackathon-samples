@@ -1,0 +1,20 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+div.collections-container {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+
+    > div.collections-header-container {
+        color: theme.$primary;
+        margin: 10px 0;
+    }
+
+    div.collections-item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "main_nav": {
+    "bloody_november": "Bloody November",
+    "home": "Home",
+    "victims": "Victims"
+  },
+  "bloody_november": "Bloody November",
+  "unidentified": "Unidentified",
+  "unspecified": "Unspecified",
+  "between": "between",
+  "to": "to",
+  "or": "or",
+  "less_than": "less than",
+  "more_than": "more than",
+  "probably_less_than": "probably less than",
+  "probably_more_than": "probably more than",
+  "probably": "probably",
+  "year": "years old",
+  "footer": {
+    "copyright": "2022 © All Rights Reserved by | The Association of Families of Flight PS752 Victims "
+  }
+}

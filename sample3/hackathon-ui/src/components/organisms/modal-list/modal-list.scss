@@ -1,0 +1,112 @@
+@use "../../../theme/css-theme.scss" as theme;
+
+.modal-dialog {
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    max-width: 40%;
+    max-height: 80vh;
+
+    .modal-content {
+        background-color: #2d3748 !important;
+        color: theme.$primary;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: 80vh;
+
+        .modal-header {
+            border-bottom: 2px solid black;
+        }
+
+        .modal-body {
+            overflow-y: auto;
+        }
+    }
+}
+
+.modal-close {
+    width: 10.5px;
+    height: 10.5px;
+    color: #ffffff;
+    font-weight: bold;
+    background: none;
+}
+
+.modal-close:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.modal-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    border: 0;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0px;
+    float: right;
+}
+
+.share-btn {
+    background-color: #accfff;
+}
+
+.copy-btn {
+    background-color: #b8acff;
+}
+
+.modal.fade .modal-dialog {
+    transform: translate3d(0, 100vh, 0);
+}
+
+.modal.show .modal-dialog {
+    transform: translate3d(0, 0, 0);
+}
+.link-label {
+    color: theme.$primary;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.link-txt,
+.link-txt:hover,
+.link-txt:focus {
+    direction: ltr !important;
+    margin-top: 6px;
+    font-size: 10px;
+}
+.modal-rtl {
+    direction: rtl;
+
+    .modal-btn {
+        float: left;
+    }
+}
+
+.popover-container {
+    padding: 10px;
+
+    .row {
+        justify-content: center;
+
+        img {
+            width: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .modal-dialog {
+        max-width: 100%;
+        margin: 0;
+    }
+}
